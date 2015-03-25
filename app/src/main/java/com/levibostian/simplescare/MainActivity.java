@@ -1,6 +1,8 @@
 package com.levibostian.simplescare;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +12,8 @@ public class MainActivity extends ActionBarActivity {
 
     private Button mPressMeButton;
     private ImageView mScaryImageView;
+
+    private static final int VIBRATE_TIME_PERIOD = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +37,9 @@ public class MainActivity extends ActionBarActivity {
 
     private void showScaryPicture() {
         mScaryImageView.setImageResource(R.drawable.scary_picture);
+
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(VIBRATE_TIME_PERIOD);
     }
 
 }
