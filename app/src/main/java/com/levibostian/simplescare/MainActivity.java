@@ -33,6 +33,8 @@ public class MainActivity extends ActionBarActivity {
                 showScaryPicture();
             }
         });
+
+        getSupportActionBar().hide();
     }
 
     private void showScaryPicture() {

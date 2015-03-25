@@ -15,7 +15,7 @@
             android:layout_height="0dp"
             android:layout_weight=".5"
             android:gravity="bottom|center_horizontal"
-            android:text="Press button...IF YOU DARE."
+            android:text="Press the button.\nGo ahead. Do it."
             android:textSize="22sp"
             android:textStyle="bold"/>
 
