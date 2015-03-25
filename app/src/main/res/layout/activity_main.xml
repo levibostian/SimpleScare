@@ -35,7 +35,10 @@
         <ImageView
             android:id="@+id/scary_imageview"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"/>
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/scary_picture"
+            tools:visibility="invisible"/>
 
     </FrameLayout>
 
